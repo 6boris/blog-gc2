@@ -4,8 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\AccessLog;
+use App\Extend\MsResult;
 
-class UserController extends Controller
+
+class AccessLogController extends Controller
 {
      /**
      * 查看文章列表
@@ -13,8 +16,10 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function index(){
-        return view("admin.log");
+    public function index(Request $request){
+        $res = AccessLog::take(10)->get();
+        // dd($res);
+        return view("admin.syslog.access.index")->with("logs",$res);
     }
     
     /**
@@ -72,7 +77,11 @@ class UserController extends Controller
      *
      * @return void
      */
-    public function destroy(){
-        return "删除指定文章";
+    public function destroy($id){
+        $ms = new MsResult();
+        $ms->status = 1;
+        $ms->message = "系统错误";
+        
+        return $ms->toJson();
     }
 }

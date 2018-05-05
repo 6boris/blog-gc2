@@ -14,6 +14,7 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/demo','Admin\DemoController@demo');
 
 
 Route::get('/','Index\IndexController@index');
@@ -27,4 +28,16 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
 		Route::get('index','UserController@index');
 		Route::get('edit','UserController@edit');
 	});
+	Route::group(['prefix' => 'syslog'],function(){
+		Route::resource('access' , "AccessLogController");
+	});
+});
+
+Route::group(['prefix' => 'api','namespace' => 'Api'],function(){
+	Route::group(['prefix' => 'user'],function(){
+		Route::resource('users' , "UserController");
+		Route::get('demo','UserController@index');
+
+	});
+
 });

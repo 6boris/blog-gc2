@@ -120,6 +120,7 @@
                                 <span class="fa arrow"></span>
                             </a>
                             <ul class="nav nav-second-level collapse">
+                                <li><a href="{{ URL('/admin/syslog/access') }}">访问日志</a></li>
                                 <li><a href="{{ URL('/admin') }}">行为日志</a></li>
                                 <li><a href="{{ URL('/admin') }}">恢复数据库</a></li>
                                 <li><a href="{{ URL('/admin') }}">备份记录</a></li>

@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class DemoController extends Controller
 {
-     /**
+    /**
      * 查看文章列表
      * Route::get('/users', 'UsersController@index')->name('users.index');
      *
      * @return void
      */
     public function index(){
-        return view("admin.log");
+        return "显示文章列表";
     }
     
     /**
