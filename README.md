@@ -10,7 +10,7 @@
 
 此项目为个人开发的博客项目，记录了自己的学习路劲。
 
-![Kayle Blog](./images/1525519691461.jpg)
+![Kayle Blog](https://github.com/kayles/kblog/blob/master/public/static/index/img/KayleBlog.png)
 
 
 ## 功能如下
