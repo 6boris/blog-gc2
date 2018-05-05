@@ -140,7 +140,7 @@ password: 123456
 ## 服务器架构说明
 &emsp;&emsp;这里可以放一张大大的服务器架构图，下面是个例子
 
-![网站架构图](./images/1525520892851.jpg)
+![网站架构图](https://github.com/kayles/blog/blob/develop/public/static/index/img/Website_Architecture.png)
 
 >上图使用工具 ProcessOn 绘制。
 
