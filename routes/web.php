@@ -17,3 +17,14 @@
 
 
 Route::get('/','Index\IndexController@index');
+Route::get('/login','Admin\AuthController@login');
+Route::get('/register','Admin\AuthController@register');
+
+
+Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
+	Route::get('','IndexController@index');
+	Route::group(['prefix' => 'user'],function(){
+		Route::get('index','UserController@index');
+		Route::get('edit','UserController@edit');
+	});
+});

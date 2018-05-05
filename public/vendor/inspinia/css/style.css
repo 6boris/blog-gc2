@@ -6,6 +6,15 @@
  *   version 2.7.1
  *
 */
+
+
+/*自定义样式*/
+.table>tbody>tr>td>img{
+  border-radius: 50%;
+}
+
+
+
 h1,
 h2,
 h3,
@@ -3759,7 +3768,8 @@ body.body-small .footer.fixed {
   border-top: 1px solid #e7eaec;
   line-height: 1.42857;
   padding: 8px;
-  vertical-align: top;
+  vertical-align: middle;
+  text-align: center;
 }
 /* PANELS */
 .panel.blank-panel {
