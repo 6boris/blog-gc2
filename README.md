@@ -6,11 +6,11 @@
 
 * 产品名称： Kayle 博客
 * 项目代号： Kayle
-* 项目地址：[www.kyle.ren](www.kyle.ren)
+* 项目地址：[www.kyle.ren](www.anonycurse.cn)
 
 此项目为个人开发的博客项目，记录了自己的学习路劲。
 
-![Kayle Blog](https://github.com/kayles/kblog/blob/master/public/static/index/img/KayleBlog.png)
+![Kayle Blog](https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/KayleBlog.png)
 
 
 ## 功能如下
@@ -140,7 +140,7 @@ password: 123456
 ## 服务器架构说明
 &emsp;&emsp;这里可以放一张大大的服务器架构图，下面是个例子
 
-![网站架构图](https://github.com/kayles/blog/blob/develop/public/static/index/img/Website_Architecture.png)
+![网站架构图](https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/Website_Architecture.png)
 
 >上图使用工具 ProcessOn 绘制。
 
