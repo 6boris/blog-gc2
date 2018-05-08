@@ -23,7 +23,7 @@ Route::get('/register','Admin\AuthController@register');
 
 
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
-	// 后台默认页面
+	// 后台默认页
 	Route::get('','IndexController@index');
 
 	// 用户管理
@@ -48,6 +48,7 @@ Route::group(['prefix' => 'api','namespace' => 'Api'],function(){
 		Route::resource('users' , "UserController");
 		Route::get('demo','UserController@index');
 
+		
 	});
 
 });

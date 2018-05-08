@@ -123,7 +123,7 @@ $('#delete').click(function(){
 <script>
        $(document).ready(function(){
             $('#access').DataTable({
-                pageLength: 50,
+                pageLength: 10,
                 // responsive: true,
                 // bInfo: true,
                 // info:true,
