@@ -6,7 +6,7 @@
 
 * 产品名称： Kayle 博客
 * 项目代号： Kayle
-* 项目地址：[www.kyle.ren](www.anonycurse.cn)
+* 项目地址：[www.anonycurse.cn](www.anonycurse.cn)
 
 此项目为个人开发的博客项目，记录了自己的学习路劲。
 
