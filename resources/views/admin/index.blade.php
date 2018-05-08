@@ -22,11 +22,11 @@
         <div class="ibox float-e-margins">
             <div class="alert alert-info alert-dismissable">
                 <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                欢迎来到后台管理系统 <a class="alert-link" href="">了解更多</a>.                        
+                博客测试后台 <a class="alert-link" href="https://github.com/kayles">了解更多</a>.                        
             </div>
             <div class="alert alert-danger alert-dismissable">
                 <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                欢迎来到后台管理系统 <a class="alert-link" href="">了解更多</a>.
+                博客测试后台 <a class="alert-link" href="https://github.com/kayles">了解更多</a>.
             </div>
         </div>
 

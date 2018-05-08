@@ -23,13 +23,23 @@ Route::get('/register','Admin\AuthController@register');
 
 
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
+	// 后台默认页面
 	Route::get('','IndexController@index');
+
+	// 用户管理
 	Route::group(['prefix' => 'user'],function(){
 		Route::get('index','UserController@index');
 		Route::get('edit','UserController@edit');
 	});
+
+	// 系统日志管理
 	Route::group(['prefix' => 'syslog'],function(){
 		Route::resource('access' , "AccessLogController");
+	});
+
+	// 后台案列
+	Route::group(['prefix' => 'demo'],function(){
+		Route::get('table1' , "DemoTable1Controller@index");
 	});
 });
 

@@ -17,7 +17,7 @@ class AccessLogController extends Controller
      * @return void
      */
     public function index(Request $request){
-        $res = AccessLog::take(10)->get();
+        $res = AccessLog::take(100)->get();
         // dd($res);
         return view("admin.syslog.access.index")->with("logs",$res);
     }

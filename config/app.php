@@ -159,6 +159,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        /**
+         *  第三方插件
+         */
+
+        // DataTable
+        Yajra\DataTables\DataTablesServiceProvider::class,
+
 
     ],
 
@@ -208,6 +216,15 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /**
+         * 第三方依赖
+         */
+        
+        // TataTable
+        "DataTables"  => Yajra\DataTables\DataTablesServiceProvider::class
+
+
 
     ],
 

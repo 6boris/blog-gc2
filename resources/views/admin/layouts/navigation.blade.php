@@ -3,7 +3,7 @@
                     <ul class="nav metismenu" id="side-menu">
                         <li class="nav-header">
                             <div class="dropdown profile-element">
-                                <span><img alt="image" class="img-circle" src="{{ URL('vendor/inspinia/img/profile_small.jpg') }}" /></span>
+                                <span><img alt="image" class="img-circle" src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/img/profile_small.jpg" /></span>
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                     <span class="clear">
                                         <span class="block m-t-xs"><strong class="font-bold">Admin</strong></span>
@@ -121,6 +121,19 @@
                             </a>
                             <ul class="nav nav-second-level collapse">
                                 <li><a href="{{ URL('/admin/syslog/access') }}">访问日志</a></li>
+                                <li><a href="{{ URL('/admin') }}">行为日志</a></li>
+                                <li><a href="{{ URL('/admin') }}">恢复数据库</a></li>
+                                <li><a href="{{ URL('/admin') }}">备份记录</a></li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-info-circle"></i>
+                                <span class="nav-label">演示案列</span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-second-level collapse">
+                                <li><a href="{{ URL('/admin/demo/table1') }}">DataTable1</a></li>
                                 <li><a href="{{ URL('/admin') }}">行为日志</a></li>
                                 <li><a href="{{ URL('/admin') }}">恢复数据库</a></li>
                                 <li><a href="{{ URL('/admin') }}">备份记录</a></li>

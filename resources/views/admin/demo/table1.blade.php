@@ -1,11 +1,22 @@
 @extends('admin.layouts.app')
-@section('title', '访问日志')
+@section('title', 'DataTables')
 
 
 @section('mycss')
 <link href="{{ URL('vendor/inspinia/css/plugins/dataTables/datatables.min.css') }}" rel="stylesheet">
-<link href="{{ URL('vendor/inspinia/css/plugins/bootstrap-table/bootstrap-table.css') }}" rel="stylesheet">
+<!-- <link href="{{ URL('vendor/inspinia/css/plugins/dataTables/jquery.dataTables.js') }}" rel="stylesheet"> -->
+<!-- <link href="{{ URL('vendor/inspinia/css/plugins/bootstrap-table/bootstrap-table.css') }}" rel="stylesheet"> -->
 <!-- <link href="{{ URL('vendor/inspinia/css/plugins/dataTables/jquery.dataTables.css')}}" rel="stylesheet"> -->
+
+<!-- <link href="{{ URL('vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet"> -->
+<!-- <link href="{{ URL('vendor/datatables/css/dataTables.bootstrap.min.css') }}" rel="stylesheet"> -->
+<!-- <link href="{{ URL('vendor/datatables/css/dataTables.foundation.min.css') }}" rel="stylesheet"> -->
+<!-- <link href="{{ URL('vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet"> -->
+
+<!-- <link href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css" rel="stylesheet"> -->
+
+
+
 @endsection
 
 @section('content')
@@ -22,7 +33,7 @@
                 <strong>系统日志</strong>
             </li>
             <li class="active">
-                <a href="{{URL('admin/syslog/access')}}">访问日志</a>
+                <a href="{{URL('admin/syslog/access')}}">table1</a>
             </li>
         </ol>
     </div>
@@ -39,7 +50,7 @@
             </div>
             <div class="ibox-content">
                 <div class="table-responsive">
-                <table class="table table-striped table-bordered table-hover" id="access" >
+                <table class="table table-striped table-bordered table-hover" id="dataTables-syslog-access" >
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -86,9 +97,54 @@
 
 @section('myjs')
 <script src="{{ URL('vendor/inspinia/js/plugins/dataTables/datatables.min.js') }}"></script>
-<script src="{{ URL('vendor/inspinia/js/plugins/bootstrap-table/bootstrap-table.js') }}"></script>
+<!-- <script src="{{ URL('vendor/inspinia/js/plugins/dataTables/jquery.dataTables.js') }}"></script> -->
+<!-- <script src="{{ URL('vendor/inspinia/js/plugins/bootstrap-table/bootstrap-table.js') }}"></script> -->
+<!-- <script src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script> -->
 
 <script>
+
+$(document).ready(function() {
+    // $('#dataTables-syslog-access').DataTable(
+    //     "paging": true
+    // );
+    $('#dataTables-syslog-access').DataTable( {
+        // 搜索大小写不敏感
+        "caseInsensitive": false,
+        // 设置布局
+        dom: '<"html5buttons"B>lTfgitp',
+            buttons: ['colvis', 'excel', 'print'],
+        // 设置分页类型
+        sPaginationType:'full_numbers',
+        // 设置语言
+        language: {
+            "info": "第 _PAGE_ 页(共 _PAGES_ 页）",
+            paginate: {
+                first: '首页',
+                previous: '上一页',
+                next: '下一页',
+                last: '末页'
+            }
+            
+        },
+        // 
+        buttons: [
+                    {extend: 'copy'},
+                    {extend: 'csv'},
+                    {extend: 'excel', title: 'ExampleFile'},
+                    {extend: 'pdf', title: 'ExampleFile'},
+                    {extend: 'print',
+                     customize: function (win){
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                    }
+                    }
+                ]      
+    });
+});
 
 $('#delete').click(function(){
         $.ajax({
@@ -119,12 +175,13 @@ $('#delete').click(function(){
 </script>
 
 
-<script src="https://cdn.bootcss.com/datatables/1.10.16/css/jquery.dataTables.css"></script>
-<script>
+<!-- <script src="{{ URL('vendor/inspinia/js/plugins/dataTables/jquery.dataTables.js')}}"></script> -->
+<!-- <script>
        $(document).ready(function(){
-            $('#access').DataTable({
+            $('.dataTables-example').DataTable({
+
                 pageLength: 50,
-                // responsive: true,
+                responsive: true,
                 // bInfo: true,
                 // info:true,
                 bAutoWidth: true,
@@ -181,7 +238,7 @@ $('#delete').click(function(){
         });
 
 
-</script>
+</script> -->
 
 <script>
 

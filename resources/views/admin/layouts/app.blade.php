@@ -1,4 +1,3 @@
-<!-- * * INSPINIA - Responsive Admin Theme * version 2.7 * -->
 <!DOCTYPE html>
 <html>
     
@@ -10,11 +9,11 @@
         <title>@yield('title')</title>
         <meta name="description" content=@yield('title') />
         <meta name="keywords" content=@yield('title') />
-        <link href="{{ URL('vendor/inspinia/css/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="{{ URL('vendor/inspinia/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
-        <link href="{{ URL('vendor/inspinia/css/animate.css') }}" rel="stylesheet">
-        <link href="{{ URL('vendor/inspinia/css/style.css') }}" rel="stylesheet">
-        <link href="{{ URL('vendor/inspinia/css/app.css') }}" rel="stylesheet">
+        <link href="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+        <link href="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/css/style.css" rel="stylesheet">
+        <link href="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/css/app.css" rel="stylesheet">
     </head>
 
         <!-- Toastr style -->
@@ -42,13 +41,12 @@
             </div>
     
         </div>
-
         <!-- Mainly scripts -->
-        <script src="{{ URL('vendor/inspinia/js/jquery-3.1.1.min.js') }}"></script>
-        <script src="{{ URL('vendor/inspinia/js/jquery.cookie.js') }}"></script>
-        <script src="{{ URL('vendor/inspinia/js/bootstrap.min.js') }}"></script>
-        <script src="{{ URL('vendor/inspinia/js/plugins/metisMenu/jquery.metisMenu.js') }}"></script>
-        <script src="{{ URL('vendor/inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js') }}"></script>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/js/jquery.cookie.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.bootcss.com/metisMenu/2.7.7/metisMenu.js"></script>
+        <script src="https://cdn.bootcss.com/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
         <!-- Flot -->
         <!-- <script src="{{ URL('vendor/inspinia/js/plugins/flot/jquery.flot.js') }}"></script> -->
         <!-- <script src="{{ URL('vendor/inspinia/js/plugins/flot/jquery.flot.tooltip.min.js') }}"></script> -->
@@ -60,8 +58,8 @@
         <!-- <script src="{{ URL('vendor/inspinia/js/demo/peity-demo.js') }}"></script> -->
 
         <!-- Custom and plugin javascript -->
-        <script src="{{ URL('vendor/inspinia/js/inspinia.js') }}"></script>
-        <script src="{{ URL('vendor/inspinia/js/plugins/pace/pace.min.js') }}"></script>
+        <script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/js/inspinia.js"></script>
+        <script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/js/plugins/pace/pace.min.js"></script>
 
         <!-- jQuery UI -->
         <!-- <script src="{{ URL('vendor/inspinia/js/plugins/jquery-ui/jquery-ui.min.js') }}"></script> -->
@@ -76,7 +74,7 @@
         <!-- Toastr -->
         <!-- <script src="{{ URL('vendor/inspinia/js/plugins/toastr/toastr.min.js') }}"></script> -->
         
-        <script src="{{ URL('vendor/inspinia/js/app.js') }}"></script>
+        <script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/js/app.js"></script>
 
         @yield('myjs')
 

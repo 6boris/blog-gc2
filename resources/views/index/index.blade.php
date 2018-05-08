@@ -7,17 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Add Your favicon here -->
-    <!--<link rel="icon" href="img/favicon.ico">-->
+    <link rel="icon" href="img/favicon.ico">
 
     <title>Kayle Liu - 首页</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static/index/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Animation CSS -->
-    <link href="static/index/css/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    
 
-    <link href="static/index/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,7 +28,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="static/index/css/style.css" rel="stylesheet">
+    <link href="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/css/style.css" rel="stylesheet">
 </head>
 <body id="page-top">
 <div class="navbar-wrapper">
@@ -73,7 +75,7 @@
                     </p>
                 </div>
                 <div class="carousel-image wow zoomIn">
-                    <img src="static/index/img/laptop.png" alt="laptop"/>
+                    <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/laptop.png" alt="laptop"/>
                 </div>
             </div>
             <!-- Set background for slide in css -->
@@ -150,7 +152,7 @@
             </div>
         </div>
         <div class="col-md-6 text-center  wow zoomIn">
-            <img src="static/index/img/perspective.png" alt="dashboard" class="img-responsive">
+            <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/perspective.png" alt="dashboard" class="img-responsive">
         </div>
         <div class="col-md-3 text-center wow fadeInRight">
             <div>
@@ -180,7 +182,7 @@
             <a href="" class="btn btn-primary">Learn more</a>
         </div>
         <div class="col-lg-6 text-right wow fadeInRight">
-            <img src="static/index/img/dashboard.png" alt="dashboard" class="img-responsive pull-right">
+            <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/dashboard.png" alt="dashboard" class="img-responsive pull-right">
         </div>
     </div>
 </section>
@@ -197,7 +199,7 @@
         <div class="row">
             <div class="col-sm-4 wow fadeInLeft">
                 <div class="team-member">
-                    <img src="static/index/img/avatar3.jpg" class="img-responsive img-circle img-small" alt="">
+                    <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/avatar3.jpg" class="img-responsive img-circle img-small" alt="">
                     <h4><span class="navy">Amelia</span> Smith</h4>
                     <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus. </p>
                     <ul class="list-inline social-icon">
@@ -212,7 +214,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="team-member wow zoomIn">
-                    <img src="static/index/img/avatar1.jpg" class="img-responsive img-circle" alt="">
+                    <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/avatar1.jpg" class="img-responsive img-circle" alt="">
                     <h4><span class="navy">John</span> Novak</h4>
                     <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
                     <ul class="list-inline social-icon">
@@ -227,7 +229,7 @@
             </div>
             <div class="col-sm-4 wow fadeInRight">
                 <div class="team-member">
-                    <img src="static/index/img/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
+                    <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
                     <h4><span class="navy">Peter</span> Johnson</h4>
                     <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
                     <ul class="list-inline social-icon">
@@ -266,7 +268,7 @@
                 <a href="" class="btn btn-primary">Learn more</a>
             </div>
             <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
-                <img src="static/index/img/iphone.jpg" class="img-responsive" alt="dashboard">
+                <img src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/iphone.jpg" class="img-responsive" alt="dashboard">
             </div>
             <div class="col-lg-3 features-text text-right wow fadeInRight">
                 <small>INSPINIA</small>
@@ -375,7 +377,7 @@
                 </div>
                 <div class="comments-avatar">
                     <a href="" class="pull-left">
-                        <img alt="image" src="static/index/img/avatar3.jpg">
+                        <img alt="image" src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/avatar3.jpg">
                     </a>
                     <div class="media-body">
                         <div class="commens-name">
@@ -392,7 +394,7 @@
                 </div>
                 <div class="comments-avatar">
                     <a href="" class="pull-left">
-                        <img alt="image" src="static/index/img/avatar1.jpg">
+                        <img alt="image" src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/avatar1.jpg">
                     </a>
                     <div class="media-body">
                         <div class="commens-name">
@@ -409,7 +411,7 @@
                 </div>
                 <div class="comments-avatar">
                     <a href="" class="pull-left">
-                        <img alt="image" src="static/index/img/avatar2.jpg">
+                        <img alt="image" src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/img/avatar2.jpg">
                     </a>
                     <div class="media-body">
                         <div class="commens-name">
@@ -632,12 +634,12 @@
     </div>
 </section>
 
-<script src="static/index/js/jquery-2.1.1.js"></script>
-<script src="static/index/js/pace.min.js"></script>
-<script src="static/index/js/bootstrap.min.js"></script>
-<script src="static/index/js/classie.js"></script>
-<script src="static/index/js/cbpAnimatedHeader.js"></script>
-<script src="static/index/js/wow.min.js"></script>
-<script src="static/index/js/inspinia.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/classie/1.0.1/classie.min.js"></script>
+<script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/js/cbpAnimatedHeader.js"></script>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+<script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia-index/js/inspinia.js"></script>
 </body>
 </html>
