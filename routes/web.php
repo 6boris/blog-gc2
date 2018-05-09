@@ -31,6 +31,14 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
 		Route::get('index','UserController@index');
 		Route::get('edit','UserController@edit');
 	});
+	// 文章管理
+
+	Route::resource('article','ArticleController');
+	
+	// Route::group(['prefix' => 'article'],function(){
+	// 	Route::get('add','ArticleController@add');
+	// 	Route::get('edit','ArticleController@edit');
+	// });
 
 	// 系统日志管理
 	Route::group(['prefix' => 'syslog'],function(){
@@ -47,8 +55,5 @@ Route::group(['prefix' => 'api','namespace' => 'Api'],function(){
 	Route::group(['prefix' => 'user'],function(){
 		Route::resource('users' , "UserController");
 		Route::get('demo','UserController@index');
-
-		
 	});
-
 });

@@ -53,8 +53,8 @@
                                 <span class="fa arrow"></span>
                             </a>
                             <ul class="nav nav-second-level collapse">
-                                <li><a href="{{ URL('/admin') }}">添加文章</a></li>
-                                <li><a href="{{ URL('/admin') }}">添加分类</a></li>
+                                <li><a href="{{ URL('/admin/article') }}">文章管理</a></li>
+                                <li><a href="{{ URL('/admin') }}">分类管理</a></li>
                                 <li><a href="{{ URL('/admin') }}">文章列表</a></li>
                                 <li><a href="{{ URL('/admin') }}">分类列表</a></li>
                             </ul>

@@ -9,7 +9,7 @@
         <title>@yield('title')</title>
         <meta name="description" content=@yield('title') />
         <meta name="keywords" content=@yield('title') />
-        <link href="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
         <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
         <link href="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/css/style.css" rel="stylesheet">

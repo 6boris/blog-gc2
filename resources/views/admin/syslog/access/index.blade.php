@@ -3,9 +3,7 @@
 
 
 @section('mycss')
-<link href="{{ URL('vendor/inspinia/css/plugins/dataTables/datatables.min.css') }}" rel="stylesheet">
-<link href="{{ URL('vendor/inspinia/css/plugins/bootstrap-table/bootstrap-table.css') }}" rel="stylesheet">
-<!-- <link href="{{ URL('vendor/inspinia/css/plugins/dataTables/jquery.dataTables.css')}}" rel="stylesheet"> -->
+<link href="https://cdn.bootcss.com/datatables/1.10.16/css/dataTables.bootstrap.min.css" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -85,8 +83,7 @@
 
 
 @section('myjs')
-<script src="{{ URL('vendor/inspinia/js/plugins/dataTables/datatables.min.js') }}"></script>
-<script src="{{ URL('vendor/inspinia/js/plugins/bootstrap-table/bootstrap-table.js') }}"></script>
+<script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/js/plugins/dataTables/datatables.min.js"></script>
 
 <script>
 
@@ -119,7 +116,6 @@ $('#delete').click(function(){
 </script>
 
 
-<script src="https://cdn.bootcss.com/datatables/1.10.16/css/jquery.dataTables.css"></script>
 <script>
        $(document).ready(function(){
             $('#access').DataTable({
