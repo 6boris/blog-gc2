@@ -166,7 +166,7 @@ return [
 
         // DataTable
         Yajra\DataTables\DataTablesServiceProvider::class,
-
+        // GrahamCampbell\Markdown\Facades\Markdown::class,
 
     ],
 
@@ -222,7 +222,9 @@ return [
          */
         
         // TataTable
-        "DataTables"  => Yajra\DataTables\DataTablesServiceProvider::class
+        "DataTables"  => Yajra\DataTables\DataTablesServiceProvider::class,
+        // MarkDown
+        'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
 
 
 

@@ -11,6 +11,12 @@ class MsResult{
 	//返回数据 
 	public $data;
 	
+	function __construct(){
+		$this->status = 1;
+		$this->message = "系统错误!";
+		// $this->data = null;
+	}
+
 	// $status = 0 表示成功  $status > 0 表示是失败
 	public function toJson(){
 		return json_encode($this , JSON_UNESCAPED_UNICODE);

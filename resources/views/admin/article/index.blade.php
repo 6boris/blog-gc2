@@ -86,8 +86,9 @@
 @section('myjs')
 <script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/inspinia/js/plugins/dataTables/datatables.min.js"></script>
 <script>
+// 编辑文章，直接修改地址发送GET请求
 function edit(id){
-    alert(id);
+    location.href = location.href+'/'+id;
 }
 function del(id){
     alert(id);

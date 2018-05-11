@@ -21,6 +21,10 @@ Route::get('/','Index\IndexController@index');
 Route::get('/login','Admin\AuthController@login');
 Route::get('/register','Admin\AuthController@register');
 
+Route::group(['prefix' => '/','namespace' => 'Index'],function(){
+	Route::get('/article/{id}','ArticleController@show');
+	Route::get('/demo','ArticleController@demo');
+});
 
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
 	// 后台默认页
@@ -34,7 +38,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
 	// 文章管理
 
 	Route::resource('article','ArticleController');
-	
+	 
 	// Route::group(['prefix' => 'article'],function(){
 	// 	Route::get('add','ArticleController@add');
 	// 	Route::get('edit','ArticleController@edit');

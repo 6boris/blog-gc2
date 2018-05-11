@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Article;
+use App\Models\AccessLog;
+use App\Models\ArticleGroup;
+
+use App\Extend\MsResult;
+
+use DB;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\AccessLog;
-use App\Models\Article;
-use App\Models\ArticleGroup;
- 
-use DB;
 
 
 class ArticleController extends Controller
@@ -39,8 +41,17 @@ class ArticleController extends Controller
      * 
      * @return void
      */
-    public function show(){
-        return "查看单个文章";
+    public function show($id){
+        $art = DB::table('article')
+                    ->leftJoin('article_group', 'article.a_g_id', '=', 'article_group.id')
+                    ->where('article.id', '=', $id)
+                    ->select('article.id', 'article.a_name','article.a_content', 'article.a_g_id')
+                    ->get();
+        $ag = DB::table('article_group')
+                    ->select('id', 'a_g_name')
+                    ->get();
+        // dd($art);
+        return view('admin.article.show')->with('article', $art[0])->with('article_groups', $ag);
     }
 
     /**
@@ -57,13 +68,33 @@ class ArticleController extends Controller
     }
 
     /**
-     * 保存某篇文章
+     * 创建某篇文章方法
      * Route::post('/users', 'UsersController@store')->name('users.store');
      *
      * @return void
      */
-    public function store(){
-        return "保存某篇文章";
+    public function store(Request $request){
+        $ms = new MsResult();
+        $art = new Article();
+        if((int)$request->input('id'))
+        $art->id = (int)$request->input('id');
+        $art->a_name = $request->input('name');
+        $art->a_g_id = $request->input('g_id');
+        $art->a_content = htmlspecialchars( $request->input('content') );
+        $art->save();
+
+        // $art= DB::table('article')
+        //                     ->where('id', '=', (int)$request->input('id'))
+        //                     ->update([
+        //                         'a_name'    => $request->input('name'),
+        //                         'a_g_id'    => $request->input('g_id'),
+        //                         'a_content' => htmlspecialchars( $request->input('content') ),
+        //                     ]);
+        if($art){
+            $ms->status = 0;
+            $ms->message = "保存成功!";
+        }
+        return $ms->toJSON();
     }
 
     /**
@@ -81,8 +112,24 @@ class ArticleController extends Controller
      *
      * @return void
      */
-    public function update(){
-        return "更新指定文章";
+    public function update($id , Request $request){
+        $ms = new MsResult();
+        $art = new Article();
+
+        // 更新文章信息
+        $res = DB::table('article')
+                    ->where('id', '=', $id )
+                    ->update([
+                        'a_name' => $request->input('name'),
+                        'a_g_id' => $request->input('g_id'),
+                        'a_content' => htmlspecialchars( $request->input('content') )
+                    ]);
+
+        $ms->status = 0;
+        $ms->message = "保存成功!";
+        $ms->data = $art->update();
+
+        return $ms->toJson();
     }
 
     /**
