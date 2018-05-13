@@ -32,7 +32,7 @@ class ArticleController extends Controller
                         'article.a_content', 'article.created_at','article.updated_at',
                         'article_group.a_g_name','user.u_name')
                 ->get(); 
-        return view('admin.article.index')->with("articles",$res);;
+        return view('admin.article.index')->with("articles",$res);
     }
     
     /**

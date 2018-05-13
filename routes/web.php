@@ -38,6 +38,9 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function(){
 	// 文章管理
 
 	Route::resource('article','ArticleController');
+	Route::resource('preview','ArticlePreviewController');
+	Route::resource('articlegroup','ArticleGroupController');
+	// Route::get('preview/{id}','ArticlePreviewController@preview');
 	 
 	// Route::group(['prefix' => 'article'],function(){
 	// 	Route::get('add','ArticleController@add');
