@@ -72,7 +72,7 @@
 
 <!-- <script src="https://kayle-vendor.oss-cn-shenzhen.aliyuncs.com/editor.md/editormd.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
-<script src="{{ URL('vendor/editor.md/editormd.min.js') }}"></script>
+<script src="{{ URL('vendor/editor.md/js/editormd.min.js') }}"></script>
 <script type="text/javascript">
 			var testEditor;
             $(function() {    
